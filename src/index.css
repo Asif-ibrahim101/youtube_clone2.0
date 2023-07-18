@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(114, 113, 113);
+    border-radius: 10px;
+    height: 200px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.react-player {
+    height: 77vh !important;
+    width: 100% !important;
+}
+
+#banner {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 241, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+@media screen and (max-width: 600px) {
+    .scroll-horizontal {
+        overflow: auto !important;
+    }
+
+    .react-player {
+        height: 50vh !important;
+        width: 100% !important;
+    }
+
+    .search-bar {
+        width: 200px;
+    }
+}
